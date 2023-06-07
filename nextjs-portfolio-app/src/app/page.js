@@ -1,13 +1,18 @@
+import Navbar from '@/components/Navbar'
 import Image from 'next/image'
 
-export default function Home() {
+export default function App() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono">
-        <h2 className="fixed left-0 top-24 flex w-full justify-center">
-          Hail Hecate&nbsp; Queen of Heaven.
-        </h2>
-      </div>
-    </main>
+    <>
+      <Navbar></Navbar>
+      <main className="bg-light w-full min-h-screen">
+        <div className="w-full">
+          <h1 className="fixed top-24 flex w-full justify-center">
+            Hail Hecate Queen of Heaven.
+          </h1>
+        </div>
+      </main>
+    </>
+
   )
 }
