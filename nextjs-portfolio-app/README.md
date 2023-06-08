@@ -35,7 +35,8 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 5. Add an AI generated profile picture for the Homepage
 6. Style the homepage
 7. Add a component for the animated text on the Homepage
-8. 
+8. Animate the text on the homepage ith the 'framer-motion' library
+9. 
 
 
 flex mx-auto my-0 w-full justify-center items-center
