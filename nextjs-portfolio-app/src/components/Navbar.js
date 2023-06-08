@@ -1,13 +1,21 @@
+'use client'
 import Link from 'next/link'
 import React from 'react'
 import Logo from './Logo'
+import { usePathname } from 'next/navigation'
+import { TwitterIcon, GithubIcon, LinkedInIcon } from './icons'
 
 const CustomLink = ({ href, title, className=''}) => {
+  const pathname = usePathname();
+
   return (
-    <Link href={href} className={`${className} relative`}>
+    <Link href={href} className={`${className} relative group`}>
       {title}
       <span
-        className='h-0.5 inline-block w-full bg-primary absolute left-0 -bottom-1.5'
+        className={
+          `h-0.5 inline-block bg-primary absolute left-0 -bottom-1.5 group-hover:w-full transition-[width] ease duration-300
+          ${pathname === href ? 'w-full' : 'w-0'}`
+        }
       >&nbsp;</span>
     </Link>
   )
@@ -28,9 +36,15 @@ const Navbar = () => {
       </div>
 
       <nav>
-        <Link href='/' target='{_blank}'>Social 1</Link>
-        <Link href='/' target='{_blank}'>Social 2</Link>
-        <Link href='/' target='{_blank}'>Social 3</Link>
+        <Link href='/' target='{_blank}'>
+          <TwitterIcon />
+        </Link>
+        <Link href='/' target='{_blank}'>
+          <GithubIcon />
+        </Link>
+        <Link href='/' target='{_blank}'>
+          <LinkedInIcon />
+        </Link>
       </nav>
     </header>
   )
