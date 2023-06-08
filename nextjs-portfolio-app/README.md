@@ -33,5 +33,9 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
     - Logo
     - Social Icons
 5. Add an AI generated profile picture for the Homepage
-6. 
+6. Style the homepage
+7. Add a component for the animated text on the Homepage
+8. 
 
+
+flex mx-auto my-0 w-full justify-center items-center
