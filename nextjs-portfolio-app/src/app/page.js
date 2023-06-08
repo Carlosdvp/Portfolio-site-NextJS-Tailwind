@@ -7,7 +7,7 @@ export default function App() {
       <Navbar></Navbar>
       <main className="bg-light w-full min-h-screen">
         <div className="w-full">
-          <h1 className="fixed top-24 flex w-full justify-center">
+          <h1 className="pt-24 flex w-full justify-center">
             Hail Hecate Queen of Heaven.
           </h1>
         </div>
