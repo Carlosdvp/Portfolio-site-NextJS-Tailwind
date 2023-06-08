@@ -4,6 +4,7 @@ import React from 'react'
 import Logo from './Logo'
 import { usePathname } from 'next/navigation'
 import { TwitterIcon, GithubIcon, LinkedInIcon } from './icons'
+import { motion } from 'framer-motion'
 
 const CustomLink = ({ href, title, className=''}) => {
   const pathname = usePathname();
@@ -35,16 +36,16 @@ const Navbar = () => {
         <Logo></Logo>
       </div>
 
-      <nav>
-        <Link href='/' target='{_blank}'>
+      <nav className='flex items-center justify-center flex-wrap'>
+        <motion.a className='mr-4' href='https://twitter.com/' target='{_blank}' whileHover={{y:-3}}>
           <TwitterIcon />
-        </Link>
-        <Link href='/' target='{_blank}'>
+        </motion.a>
+        <motion.a className='mr-4' href='https://github.com' target='{_blank}' whileHover={{y:-3}}>
           <GithubIcon />
-        </Link>
-        <Link href='/' target='{_blank}'>
+        </motion.a>
+        <motion.a className='' href='https://www.linkedin.com' target='{_blank}' whileHover={{y:-3}}>
           <LinkedInIcon />
-        </Link>
+        </motion.a>
       </nav>
     </header>
   )

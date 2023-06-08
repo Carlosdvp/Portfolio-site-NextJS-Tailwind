@@ -5,10 +5,10 @@ export default function App() {
   return (
     <>
       <Navbar></Navbar>
-      <main className="bg-light w-full min-h-screen">
+      <main className="flex items-center text-dark w-full min-h-screen">
         <div className="w-full">
           <h1 className="pt-24 flex w-full justify-center">
-            Hail Hecate Queen of Heaven.
+            Hecate
           </h1>
         </div>
       </main>
