@@ -47,8 +47,17 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ### II. About page
 
-1. Create the main About me page
-2. 
+1. Create the About me page
+2. add biograhy and a profile picture
+3. Add Skills and style that section with css functions and framer motion
+4. Add the Experience component
+5. Add scrolling animation to the experience section
+    - https://www.framer.com/motion/scroll-animations/
+6. Add circle icons for the Elements of the Experience list
+    - adding the 'ListIcon' mini component has an odd breaking effect on the list items, it pushes some to the right more than others.
+    - I will create the component for future reference but will not add it to the website for now
+    - UPDATE: well, as it turns out as soon as I made them into svg's their behavior is what was expected, moving forward with it.
+7. 
 
 
 flex mx-auto my-0 w-full justify-center items-center

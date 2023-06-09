@@ -5,6 +5,7 @@ import Footer from '@/components/Footer'
 import Image from 'next/image'
 import ProfilePic from '../../../public/images/profile-pic-2.png'
 import Skills from '@/components/Skills'
+import Experience from '@/components/Experience'
 
 export default function Page() {
   return (
@@ -27,6 +28,7 @@ export default function Page() {
           </div>
         </div>
         <Skills />
+        <Experience />
       </main>
       <Footer />
     </>
