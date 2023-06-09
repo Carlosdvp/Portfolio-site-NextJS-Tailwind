@@ -4,11 +4,12 @@ import profilePic from '../../../public/images/home/background.png'
 import AnimatedText from '@/components/AnimatedText'
 import Link from 'next/link'
 import { LinkArrow } from '@/components/icons'
+import Hireme from '@/components/Hireme'
 
 const Homepage = () => {
   return (
     <main className="flex text-dark w-full min-h-screen">
-      <div className='flex justify-between w-1/2'>
+      <div className='flex w-1/2'>
         <Image src={profilePic} alt='Dude' className='h-[90%] w-full' />
       </div>
       <div className='w-1/2 mx-0 my-auto pl-4'>
@@ -30,6 +31,7 @@ const Homepage = () => {
           >Contact</Link>
         </div>
       </div>
+      <Hireme></Hireme>
     </main>
   )
 }

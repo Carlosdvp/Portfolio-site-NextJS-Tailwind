@@ -36,7 +36,9 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 6. Style the homepage
 7. Add a component for the animated text on the Homepage
 8. Animate the text on the homepage ith the 'framer-motion' library
-9. 
+9. Add a button to download Resume and a link to send an email
+10. Create a Footer component
+11. 
 
 
 flex mx-auto my-0 w-full justify-center items-center

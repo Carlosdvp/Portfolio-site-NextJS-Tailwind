@@ -16,6 +16,9 @@ module.exports = {
         light: "#4ADFF7",
         primary: "#00D4F5",
         primaryDark: "#236A75",
+      },
+      animation: {
+        'spin-slow': 'spin 7s linear infinite',
       }
     },
   },
