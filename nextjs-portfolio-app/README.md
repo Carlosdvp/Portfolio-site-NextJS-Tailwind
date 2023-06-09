@@ -25,6 +25,8 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ## Steps
 
+### I. Homepage and setup
+
 1. Create next app selecting the desired options
 2. Remove unneeded boilerplate code
 3. Install packages
@@ -38,7 +40,15 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 8. Animate the text on the homepage ith the 'framer-motion' library
 9. Add a button to download Resume and a link to send an email
 10. Create a Footer component
-11. 
+11. Go to Canva and create an circular text icon, donwload as png
+    - remove background at remove.bg
+    - convert to svg at Adobe.com/express
+12. Use svg to create the spinning text component for the Hireme button
+
+### II. About page
+
+1. Create the main About me page
+2. 
 
 
 flex mx-auto my-0 w-full justify-center items-center
