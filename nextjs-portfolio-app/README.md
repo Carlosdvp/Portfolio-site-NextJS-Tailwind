@@ -62,6 +62,9 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 ### III. Projects page
 
 1. Create the new page and build out the boilerplate code.
-2. 
+2. Add 2 sub-components in the projects page
+3. Style the components and fine tune the look
+4. Add dummy data for PoC
+
 
 

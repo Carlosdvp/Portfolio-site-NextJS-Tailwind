@@ -15,8 +15,9 @@ const Details = ({place, time, degree}) => {
         whileInView={{y: 0}}
         transition={{duration: 0.5, type: 'spring'}}
       >
-        <h3 className='capitalize font-bold text-3xl'>{place}</h3>
-        <span className='capitalize font-medium text-xl text-light/75'>{degree} | {time}</span>
+        <h3 className='capitalize font-bold text-2xl pb-4'>{place}</h3>
+        <span className='capitalize font-medium text-xl text-light'>{degree}</span>
+        <p>{time}</p>
       </motion.div>
     </li>
   )
