@@ -8,7 +8,7 @@ const Details = ({place, time, degree}) => {
   const ref = useRef(null)
 
   return (
-    <li ref={ref} className='my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col itmes-center justify-between'>
+    <li ref={ref} className='mt-12 mb-8 pt-4 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col itmes-center justify-between'>
       <ListIcon reference={ref} />
       <motion.div
         initial={{y: 50}}
