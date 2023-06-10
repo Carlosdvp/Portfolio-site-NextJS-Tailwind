@@ -57,7 +57,11 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
     - adding the 'ListIcon' mini component has an odd breaking effect on the list items, it pushes some to the right more than others.
     - I will create the component for future reference but will not add it to the website for now
     - UPDATE: well, as it turns out as soon as I made them into svg's their behavior is what was expected, moving forward with it.
-7. 
+7. Add the Education section
+
+### III. Projects page
+
+1. Create the new page and build out the boilerplate code.
+2. 
 
 
-flex mx-auto my-0 w-full justify-center items-center

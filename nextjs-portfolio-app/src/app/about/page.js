@@ -6,6 +6,7 @@ import Image from 'next/image'
 import ProfilePic from '../../../public/images/profile-pic-2.png'
 import Skills from '@/components/Skills'
 import Experience from '@/components/Experience'
+import Education from '@/components/Education'
 
 export default function Page() {
   return (
@@ -29,6 +30,7 @@ export default function Page() {
         </div>
         <Skills />
         <Experience />
+        <Education />
       </main>
       <Footer />
     </>

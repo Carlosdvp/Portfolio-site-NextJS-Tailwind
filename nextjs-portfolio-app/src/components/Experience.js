@@ -1,13 +1,22 @@
-import React from 'react'
+'use client'
+
+import React, { useRef } from 'react'
 import ListIcon from './ListIcon';
+import { motion } from 'framer-motion';
 
 const WorkDetails = ({position, company, time, work}) => {
   const workItems = work.split('\n').filter(item => item.trim() !== '');
 
+  const ref = useRef(null)
+
   return (
-    <li className='my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex fle-col itms-center justify-between'>
-      <div>
-        <ListIcon />
+    <li ref={ref} className='my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col itmes-center justify-between'>
+      <ListIcon reference={ref} />
+      <motion.div
+        initial={{y: 50}}
+        whileInView={{y: 0}}
+        transition={{duration: 0.5, type: 'spring'}}
+      >
         <h3 className='capitalize font-bold text-3xl'>{position}</h3>
         <span className='capitalize font-medium text-xl text-light/75'>{company} | {time}</span>
         <ul className='font-medium text-lg w-full mt-6 ml-6 list-disc'>
@@ -15,15 +24,15 @@ const WorkDetails = ({position, company, time, work}) => {
             <li key={index}>{item}</li>
           ))}
         </ul>
-      </div>
+      </motion.div>
     </li>
   )
 }
 
 const Experience = () => {
   return (
-    <div className='my-36 w-[80%]'>
-      <h2 className='font-bold text-8xl mb-16 w-full text-center'>Experience</h2>
+    <div className='mt-32 w-full'>
+      <h2 className='font-bold text-6xl mb-16 w-full text-center'>Experience</h2>
       <div>
         <ul>
           <WorkDetails
